@@ -6,6 +6,6 @@ SELECT
         CAST(Unit_Price AS REAL) * CAST(Quantity_Sold AS INTEGER) * (1 - CAST(Discount AS REAL))
     ) AS Total_Revenue
 FROM
-    data
+    sales
 GROUP BY
     Region;
